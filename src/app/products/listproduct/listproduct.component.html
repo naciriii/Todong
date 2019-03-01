@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		
+	</div>
+	<div class="panel-body table-responsive">
+<button routerLink="/products/add" class="btn btn-sm btn-primary">Add New</button>
+<table class="table table-stripped">
+	<thead>
+		<th>Name</th>
+		<th>SKU</th>
+		<th>Price</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let product of products">
+			<td>{{product.id}}</td>
+			<td>{{product.name}}</td>
+				<td>{{product.price}}</td>
+	</tr>
+		
+	</tbody>
+</table>
+</div>
+</div>
